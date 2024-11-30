@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="0002" author="name surename">
+        <sql>
+            INSERT INTO users (email, password, username, user_role, user_status)
+            VALUES ('admin@mail.com', '$2a$10$NQCsYUryLBfd4/lh3nIhgOIOnCpu7pmoLk4bHg.DFeCBZblNSCRAC', 'admin', 'ADMIN',
+                    'ACTIVE');
+        </sql>
+
+    </changeSet>
+</databaseChangeLog>

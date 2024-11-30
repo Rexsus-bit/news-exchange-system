@@ -1,0 +1,13 @@
+plugins {
+    id 'java'
+}
+
+group 'com.news'
+version '1.0-SNAPSHOT'
+
+test {
+    useJUnitPlatform()
+}
+
+
+
